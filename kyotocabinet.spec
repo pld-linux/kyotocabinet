@@ -6,11 +6,12 @@ Summary:	Straightforward implementation of DBM
 Summary(pl.UTF-8):	Bezpośrednia implementacja DBM
 Name:		kyotocabinet
 Version:	1.2.77
-Release:	1
+Release:	2
 License:	GPL v3+ with FOSS exception
 Group:		Libraries
 Source0:	https://fallabs.com/kyotocabinet/pkg/%{name}-%{version}.tar.gz
 # Source0-md5:	0f1fa6d10cb5501ebc0ad6ded7a90f68
+Patch0:		%{name}-opt.patch
 URL:		https://fallabs.com/kyotocabinet/
 BuildRequires:	libstdc++-devel
 BuildRequires:	lzo-devel
@@ -87,6 +88,7 @@ Dokumentacja biblioteki Kyoto Cabinet.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %configure \
