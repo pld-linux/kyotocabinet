@@ -6,7 +6,7 @@ Summary:	Straightforward implementation of DBM
 Summary(pl.UTF-8):	Bezpośrednia implementacja DBM
 Name:		kyotocabinet
 Version:	1.2.77
-Release:	3
+Release:	4
 License:	GPL v3+ with FOSS exception
 Group:		Libraries
 Source0:	https://fallabs.com/kyotocabinet/pkg/%{name}-%{version}.tar.gz
